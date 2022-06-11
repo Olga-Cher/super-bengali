@@ -1,11 +1,18 @@
-<header>
-  <h1><a href="/">Django Girls Blog</a></h1>
-</header>
-
-{{ posts }} {% for post in posts %}
-<article>
-  <time>published: {{ post.published_date }}</time>
-  <h2><a href="">{{ post.title }}</a></h2>
-  <p>{{ post.text|linebreaksbr }}</p>
-</article>
-{% endfor %}
+<!DOCTYPE html>
+<html>
+  <body>
+    <header>
+      <h1><a href="/">Django Girls Blog</a></h1>
+    </header>
+    <p>Hi there!</p>
+    <p>It works!</p>
+    <div>{{ posts }}</div>
+    {% for post in posts %}
+    <article>
+      <time>published: {{ post.published_date }}</time>
+      <h2><a href="">{{ post.title }}</a></h2>
+      <p>{{ post.text|linebreaksbr }}</p>
+    </article>
+    {% endfor %}
+  </body>
+</html>
